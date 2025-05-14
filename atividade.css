@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.tela {
+  display: flex;
+  height: 100vh;
+}
+
+
+.menu-lateral {
+  width: 250px;
+  background-color: #3b0e39;
+  color: rgba(238, 213, 234, 0.76);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: 2px 2px 5px black;
+  height: 100vh;
+  border-radius: 0 20px 20px 0; 
+
+}
+
+/* Logo no topo */
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  align-items: center;
+  flex-direction: column; 
+}
+
+.logo img {
+  width: 160px;
+  height: 160px;
+  border-radius: 100%;
+  object-fit: cover;
+  box-shadow: 1px 1px 4px black;
+}
+.nome-logo {
+  font-size: 18px;
+  color: rgb(228, 163, 224); 
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Itens do menu */
+.itens-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.itens-menu a {
+  color: rgb(193, 165, 194);
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 5px;
+  background-color: #471145f1;
+}
+
+.itens-menu a:hover {
+  background-color: rgb(65, 15, 75);
+}
+
+.perfil {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.perfil img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid rgb(65, 15, 75);
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 5px black;
+}
+
+.perfil {
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(193, 165, 194);
+}
+
+/* Fundo da tela */
+.fundo {
+  flex: 1;
+  background-image: url('fundo.jpg');
+  background-size: cover;
+  background-position: center;
+}
